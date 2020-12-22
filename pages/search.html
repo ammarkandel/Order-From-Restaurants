@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/search.css" >
+    <title>Search-For-Restaurants</title>
+</head>
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" height="25" width="30" >
+                <span>ORDERFROM</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-search"></i><span>RESTAURANTS</span></a></li>
+                <li><a href="#"><i class="fas fa-user"></i><span>ABOUT</span></a></li>
+                <li><a href="#"><i class="fas fa-rss"></i><span>BLOG</span></a></li>
+                <li><a href="#"><i class="fas fa-bars"></i><span>MORE...</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Search-header -->
+    <header class="search-header">
+        <h2>Filter by city, street and meal:</h2>
+        <form>
+            <fieldset>
+                <label style="display: block;">YOUR CITY</label>
+                <input type="text" name="city" >
+            </fieldset>
+            <fieldset>
+                <label style="display: block;">YOUR STREET</label>
+                <input type="text" name="street" >
+            </fieldset>
+            <fieldset>
+                <label style="display: block;">YOUR FAVORITE MEAL</label>
+                <input type="text" name="meal" >
+            </fieldset>
+            <fieldset>
+                <label style="display: block;">HOW MANY MEALS?</label>
+                <input type="number" name="meal-numbers" >
+            </fieldset>
+        </form>
+    </header>
+    <!-- End Search-header -->
+</body>
+</html>
