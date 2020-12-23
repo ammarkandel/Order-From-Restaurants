@@ -84,7 +84,7 @@
 
 /* Start Media For Main Header (Tablet, desktop) */
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .main-header {
     height: 80vh;
   }
@@ -133,7 +133,6 @@
 }
 
 @media (min-width: 992px) {
-
   .main-header-overlay form {
     padding: 40px;
   }
@@ -193,6 +192,13 @@
 .steps-details div h5 {
   font-size: 18px;
   padding-top: 20px;
+}
+
+.about-info p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--fifth-color);
+  margin-bottom: 35px;
 }
 
 .steps-details div p {
@@ -258,13 +264,6 @@
   padding-bottom: 15px;
 }
 
-.about-info p {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--fifth-color);
-  margin-bottom: 35px;
-}
-
 .about-info a {
   text-decoration: none;
   background-color: var(--fifth-color);
@@ -285,7 +284,7 @@
     padding: 0 45px;
   }
 
-  .about-info p { 
+  .about-info p {
     font-size: 16px;
   }
 

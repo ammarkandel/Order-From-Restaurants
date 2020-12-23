@@ -49,6 +49,10 @@ footer {
   font-size: 14px;
 }
 
+.copy-right a {
+  color: var(--sixth-color);
+}
+
 .footer-info p a {
   text-decoration: none;
   color: var(--main-color);
@@ -107,18 +111,14 @@ footer {
   text-align: center;
 }
 
-.copy-right a {
-  color: var(--sixth-color);
-}
-
 .copy-right li:not(:last-child) {
   margin-right: 18px;
 }
 
-  /* Start Media For Footer */
-  
+/* Start Media For Footer */
+
 @media (min-width: 768px) {
-  .footer-contact li { 
+  .footer-contact li {
     display: inline-block;
   }
 
