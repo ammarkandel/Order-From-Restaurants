@@ -201,7 +201,7 @@ input[value="search"]:hover {
 @media (min-width: 992px) {
   .results {
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3,250px);
+    grid-template-rows: repeat(3, 250px);
   }
 }
 
