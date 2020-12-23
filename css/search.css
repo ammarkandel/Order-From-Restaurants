@@ -49,7 +49,7 @@ input[type="number"] {
   border-radius: 3px;
 }
 
-input[type="submit"],
+input[value="search"],
 button[type="reset"]{
   border: none;
   padding: 12px;
@@ -72,7 +72,7 @@ button[type="reset"]:hover {
   background-color: var(--eleventh-color);
 }
 
-input[type="submit"]:hover {
+input[value="search"]:hover {
   background-color: var(--ninth-color);
 }
 
@@ -94,7 +94,7 @@ input[type="submit"]:hover {
     flex-direction: row;
   }
 
-  input[type="submit"],
+  input[value="search"],
   button[type="reset"] { 
     padding: 8px 15px;
   }
@@ -210,6 +210,114 @@ input[type="submit"]:hover {
 
 /* Start Style Footer */
 
+footer {
+  background-color: var(--fourth-color);
+}
 
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 30px 50px;
+  height: 350px;
+}
+
+.footer-info h4 {
+  color: var(--fifth-color);
+  margin-bottom: 20px;
+}
+
+.footer-info p {
+  color: var(--sixth-color);
+  font-size: 14px;
+}
+
+.footer-info p a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 12px;
+}
+
+.footer-subscribe fieldset { 
+  border: none;
+}
+
+.footer-info div {
+  padding: 22px;
+}
+
+#footer-email {
+  height: 35px;
+  background: none;
+  font-size: 15px;
+  color: var(--fifth-color);
+  width: 220px;
+  border: 1px solid var(--seventh-color);
+  border-radius: 3px;
+  padding: 4px;
+  outline: none;
+}
+
+#footer-submit {
+  padding: 10px 25px;
+  background-color: var(--seventh-color);
+  border: none;
+  border-radius: 3px;
+  color: var(--fifth-color);
+  cursor: pointer;
+  outline: none;
+}
+
+.copy-right {
+  background-color: var(--copy-right);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.copy-right ul {
+  margin-bottom: 15px;
+}
+
+.copy-right li {
+  list-style: none;
+  display: inline-block;
+}
+
+.copy-right p {
+  font-size: 13.5px;
+  text-align: center;
+}
+
+.copy-right a {
+  color: var(--sixth-color);
+}
+
+.copy-right li:not(:last-child) {
+  margin-right: 18px;
+}
+
+/* Start Media For Footer */
+
+@media (min-width: 768px) {
+  .copy-right {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-info {
+    flex-direction: row;
+  }
+
+  .footer-subscribe fieldset {
+    display: flex;
+    border: none;
+  }
+}
 
 /* End Style Footer */
