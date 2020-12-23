@@ -214,6 +214,33 @@ footer {
   background-color: var(--fourth-color);
 }
 
+.footer-contact {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  border: 1px solid var(--fifth-color);
+  border-radius: 50%;
+}
+
+.footer-logo img {
+  margin: 20px 0 0 20px;
+}
+
+.footer-contact li {
+  list-style-type: none;
+}
+
+.footer-contact a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--fifth-color);
+}
+
 .footer-info {
   display: flex;
   flex-direction: column;
@@ -221,7 +248,7 @@ footer {
   align-items: center;
   text-align: center;
   padding: 30px 50px;
-  height: 350px;
+  height: 390px;
 }
 
 .footer-info h4 {
@@ -303,6 +330,14 @@ footer {
 /* Start Media For Footer */
 
 @media (min-width: 768px) {
+  .footer-contact li { 
+    display: inline-block;
+  }
+
+  .footer-contact li:not(:last-child) {
+    margin-right: 10px;
+  }
+
   .copy-right {
     flex-direction: row;
     justify-content: space-between;
@@ -312,6 +347,7 @@ footer {
 @media (min-width: 992px) {
   .footer-info {
     flex-direction: row;
+    height: 250px;
   }
 
   .footer-subscribe fieldset {

@@ -1,0 +1,276 @@
+@import "./base.css";
+
+@import "./variables.css";
+
+@import "./navbar.css";
+
+main {
+  margin: 80px 50px 20px 50px;
+}
+
+/* Start Style Details-section */
+
+.details-section {
+  box-shadow: 3px 3px 8px 8px rgba(136, 136, 136, 0.4);
+  padding: 20px;
+}
+
+.details-section h2 {
+  font-size: 35px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.details-section .order-btn {
+  float: right;
+  clear: both;
+  text-decoration: none;
+  color: var(--fifth-color);
+  background-color: var(--ninth-color);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.details-section ul {
+  margin-top: 20px;
+}
+
+.details-section li {
+  list-style: none;
+  display: inline-block;
+}
+
+.details-section li span {
+  color: var(--main-color);
+}
+
+.details-section li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.details-info {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(8, 30px);
+  row-gap: 15px;
+}
+
+.details-info div {
+  border: 1px solid var(--fourth-color);
+}
+
+.details-info div p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.details-info div p span {
+  color: var(--ninth-color);
+}
+
+/* Start Media For Details-section */
+
+@media (min-width: 768px) {
+  .details-info {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, 30px);
+    column-gap: 12px;
+  }
+}
+
+/* End Style Details-section */
+
+/* Start Style About-restaurant */
+
+.about-restaurant p {
+  margin-top: 30px;
+  font-weight: 500;
+  line-height: 26.5px;
+  font-size: 17.5px;
+}
+
+.about-restaurant .more-details {
+  background-color: var(--sixth-color);
+  display: block;
+  font-size: 27px;
+  text-decoration: none;
+  color: var(--fourth-color);
+  letter-spacing: 20px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* End Style About-restaurant */
+
+/* Start Style Map-directions */
+
+.map-directions {
+  margin-top: 80px;
+}
+
+.map-directions h4 {
+  color: var(--main-color);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#map {
+  background: url("../images/egypt-map.png") center no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+/* End Style Map-directions */
+
+/* Start Style Footer */
+
+footer {
+  background-color: var(--fourth-color);
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  border: 1px solid var(--fifth-color);
+  border-radius: 50%;
+}
+
+.footer-logo img {
+  margin: 20px 0 0 20px;
+}
+
+.footer-contact li {
+  list-style-type: none;
+}
+
+.footer-contact a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--fifth-color);
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 30px 50px;
+  height: 390px;
+}
+
+.footer-info h4 {
+  color: var(--fifth-color);
+  margin-bottom: 20px;
+}
+
+.footer-info p {
+  color: var(--sixth-color);
+  font-size: 14px;
+}
+
+.footer-info p a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 12px;
+}
+
+.footer-subscribe fieldset { 
+  border: none;
+}
+
+.footer-info div {
+  padding: 22px;
+}
+
+#footer-email {
+  height: 35px;
+  background: none;
+  font-size: 15px;
+  color: var(--fifth-color);
+  width: 220px;
+  border: 1px solid var(--seventh-color);
+  border-radius: 3px;
+  padding: 4px;
+  outline: none;
+}
+
+#footer-submit {
+  padding: 10px 25px;
+  background-color: var(--seventh-color);
+  border: none;
+  border-radius: 3px;
+  color: var(--fifth-color);
+  cursor: pointer;
+  outline: none;
+}
+
+.copy-right {
+  background-color: var(--copy-right);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.copy-right ul {
+  margin-bottom: 15px;
+}
+
+.copy-right li {
+  list-style: none;
+  display: inline-block;
+}
+
+.copy-right p {
+  font-size: 13.5px;
+  text-align: center;
+}
+
+.copy-right a {
+  color: var(--sixth-color);
+}
+
+.copy-right li:not(:last-child) {
+  margin-right: 18px;
+}
+
+/* Start Media For Footer */
+
+@media (min-width: 768px) {
+  .footer-contact li { 
+    display: inline-block;
+  }
+
+  .footer-contact li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .copy-right {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-info {
+    flex-direction: row;
+    height: 250px;
+  }
+
+  .footer-subscribe fieldset {
+    display: flex;
+    border: none;
+  }
+}
+
+/* End Style Footer */
