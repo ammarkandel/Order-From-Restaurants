@@ -9,21 +9,99 @@
 .search-header {
   margin: 60px 0;
   background-color: var(--sixth-color);
-  height: 600px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .search-header h2 {
   text-align: center;
   font-size: 40px;
-  padding-top: 50px;
   color: gray;
+}
+
+.search-header form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .search-header fieldset {
   border: none;
+  margin: 10px 0;
+}
+
+.search-header label {
+  display: block;
+  font-size: 14px;
+}
+
+.search-header input[type="text"],
+input[type="number"] {
+  height: 30px;
+  border: none;
+  margin: 3px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+input[type="submit"],
+button[type="reset"]{
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: var(--fifth-color);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+button[name="reset"] {
+  background-color: var(--tenth-color);
+}
+
+input[name="search"] {
+  background-color: var(--eighth-color);
+}
+
+button[type="reset"]:hover {
+  background-color: var(--eleventh-color);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--ninth-color);
+}
+
+/* Start Media For Search-header */
+
+@media (min-width: 768px) {
+  .search-header input[type="text"],
+  input[type="number"] {
+    height: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .search-header {
+    height: 350px;
+  }
+
+  .search-header form { 
+    flex-direction: row;
+  }
+
+  input[type="submit"],
+  button[type="reset"] { 
+    padding: 8px 15px;
+  }
+
+  .search-header fieldset:last-child {
+    margin: 23px 0 0 5px;
+  }
 }
 
 /* End Style Search-header */
