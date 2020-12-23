@@ -19,7 +19,7 @@
 .search-header h2 {
   text-align: center;
   font-size: 40px;
-  color: gray;
+  color: var(--seventh-color);
 }
 
 .search-header form {
@@ -105,3 +105,111 @@ input[type="submit"]:hover {
 }
 
 /* End Style Search-header */
+
+/* Start Style Search-results */
+
+.search-results {
+  padding: 20px;
+}
+
+.search-results h2 {
+  text-align: center;
+  font-size: 40px;
+  color: var(--seventh-color);
+}
+
+.results {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(7,250px);
+  row-gap: 20px;
+  margin-top: 40px;
+}
+
+.results div:nth-child(1) {
+  background: url("../images/e0kj_sqp.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.results div:nth-child(2) {
+  background: url("../images/e2ht_sqp.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.results div:nth-child(3) {
+  background: url("../images/e1in_sqp.jpeg") center no-repeat;
+  background-size: cover;
+}
+
+.results div:nth-child(4) {
+  background: url("../images/Capture_637381316563524530.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.results div:nth-child(5) {
+  background: url("../images/el_shif_Butchery123_637438197935937606.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.results div:nth-child(6) {
+  background: url("../images/Logo_637314011247700726.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.results div:nth-child(7) {
+  background: url("../images/691F46F7-8A1C-4701-8_637417478495158802.jpeg") center no-repeat;
+  background-size: cover;
+}
+
+.results .result-overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-overlay h3 {
+  font-size: 25px;
+  color: var(--fifth-color);
+}
+
+.result-overlay h5 {
+  margin-top: 5px;
+  color: var(--main-color);
+}
+
+.result-overlay a {
+  text-decoration: none;
+  margin-top: 30px;
+  background-color: var(--main-color);
+  color: var(--fifth-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Start Media For Search-results */
+
+@media (min-width: 768px) {
+  .results {
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(4,250px);
+    column-gap: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .results {
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,250px);
+  }
+}
+
+/* End Style Search-results */
+
+/* Start Style Footer */
+
+
+
+/* End Style Footer */
