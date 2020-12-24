@@ -130,4 +130,10 @@ main {
   height: 400px;
 }
 
+.map-directions iframe {
+  width: 100%;
+  margin: 0;
+  border: 0;
+}
+
 /* End Style Map-directions */
