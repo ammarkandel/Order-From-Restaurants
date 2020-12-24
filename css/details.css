@@ -1,0 +1,139 @@
+@import "./base.css";
+@import "./variables.css";
+@import "./navbar.css";
+@import "./footer.css";
+
+main {
+  margin: 80px 50px 20px 50px;
+}
+
+/* Start Style Details-section */
+
+.details-section {
+  box-shadow: 3px 3px 8px 8px rgba(136, 136, 136, 0.4);
+  padding: 20px;
+}
+
+.details-section h1 {
+  font-size: 35px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.details-section .order-btn {
+  float: right;
+  clear: both;
+  text-decoration: none;
+  color: var(--fifth-color);
+  background-color: var(--ninth-color);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.details-section ul {
+  margin-top: 20px;
+}
+
+.details-section li {
+  list-style: none;
+  display: inline-block;
+}
+
+.details-section li span {
+  color: var(--main-color);
+}
+
+.details-section li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.details-info {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(8, 30px);
+  row-gap: 15px;
+}
+
+.details-info div {
+  border: 1px solid var(--fourth-color);
+}
+
+.about-restaurant p {
+  margin-top: 30px;
+  font-weight: 500;
+  line-height: 26.5px;
+  font-size: 17.5px;
+}
+
+.details-info div p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.details-info div p span {
+  color: var(--ninth-color);
+}
+
+/* Start Media For Details-section */
+
+@media (min-width: 768px) {
+  .details-info {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, 30px);
+    column-gap: 12px;
+  }
+}
+
+/* End Style Details-section */
+
+/* Start Style About-restaurant */
+
+.about-restaurant .more-details {
+  background-color: var(--sixth-color);
+  display: block;
+  font-size: 27px;
+  text-decoration: none;
+  color: var(--fourth-color);
+  letter-spacing: 20px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* End Style About-restaurant */
+
+/* Start Style Map-directions */
+
+.map-directions {
+  margin-top: 80px;
+}
+
+.map-directions h2 {
+  color: var(--main-color);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.map-directions .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 400px;
+}
+
+.map-directions .mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 400px;
+}
+
+.map-directions iframe {
+  width: 100%;
+  margin: 0;
+  border: 0;
+}
+
+/* End Style Map-directions */

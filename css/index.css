@@ -1,0 +1,307 @@
+@import "./base.css";
+@import "./variables.css";
+@import "./navbar.css";
+@import "./footer.css";
+
+/* Start Style Main Header */
+
+.main-header {
+  background: url("../images/main-header-img.jpg") center no-repeat;
+  background-size: cover;
+  height: 87vh;
+}
+
+.main-header-overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header-overlay h1 {
+  color: var(--fifth-color);
+  margin-bottom: 5px;
+  font-size: 19px;
+  text-align: center;
+  padding: 0 5px 0 5px;
+}
+
+.main-header-overlay form {
+  background-color: var(--sixth-color);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.main-header-overlay .form-inputs {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.main-header-overlay label {
+  font-size: 12px;
+}
+
+.main-header-overlay input {
+  width: 240px;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+}
+
+.main-header-overlay input:last-child {
+  background-color: var(--main-color);
+  color: var(--fifth-color);
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-top: 10px;
+}
+
+.main-header-overlay a {
+  text-decoration: none;
+  background-color: var(--second-color);
+  padding: 10px;
+  color: var(--fourth-color);
+  margin-top: 25px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.main-header-overlay input:first-child {
+  font-size: 17px;
+  padding-left: 3px;
+}
+
+.main-header-overlay input:last-child:hover {
+  background-color: var(--fifth-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+/* Start Media For Main Header (Tablet, desktop) */
+
+@media (min-width: 768px) {
+  .main-header {
+    height: 80vh;
+  }
+
+  .main-header-overlay a {
+    font-size: 17px;
+  }
+
+  .main-header-overlay .form-inputs {
+    flex-direction: row;
+  }
+
+  .main-header-overlay input {
+    height: 40px;
+  }
+
+  .main-header-overlay input:first-child {
+    font-size: 20px;
+    width: 450px;
+  }
+
+  .main-header-overlay input:last-child {
+    width: 80px;
+    margin: 0;
+    background-color: var(--third-color);
+    color: var(--fifth-color);
+  }
+
+  .main-header-overlay input:last-child:hover {
+    color: var(--third-color);
+    border: 1px solid var(--third-color);
+    background-color: var(--fifth-color);
+  }
+
+  .main-header-overlay form {
+    padding: 35px;
+  }
+
+  .main-header-overlay label {
+    font-size: 16px;
+  }
+
+  .main-header-overlay h1 {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-header-overlay form {
+    padding: 40px;
+  }
+
+  .main-header-overlay input:first-child {
+    width: 750px;
+  }
+
+  .main-header-overlay input:last-child {
+    background-color: var(--main-color);
+    color: var(--fifth-color);
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  .main-header-overlay input:last-child:hover {
+    background-color: var(--fifth-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+  }
+
+  .main-header-overlay label {
+    font-size: 17px;
+  }
+
+  .main-header-overlay a {
+    font-size: 19px;
+  }
+
+  .main-header-overlay h1 {
+    font-size: 45px;
+  }
+}
+
+/* End Style Main Header */
+
+/* Start Style Steps Section */
+
+.steps {
+  padding: 0 20px;
+  margin: 80px 0 30px 0;
+}
+
+.steps h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--main-color);
+  font-size: 22px;
+}
+
+.steps-details div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps-details div h3 {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.about-info p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--fifth-color);
+  margin-bottom: 35px;
+}
+
+.steps-details div p {
+  text-align: center;
+  font-weight: 500;
+  color: var(--seventh-color);
+  padding-top: 20px;
+}
+
+.steps-details {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, 350px);
+  row-gap: 40px;
+}
+
+/* Start Media For Steps Section */
+
+@media (min-width: 768px) {
+  .steps {
+    padding: 0 80px;
+  }
+
+  .steps-details {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(2, 350px);
+    column-gap: 100px;
+  }
+}
+
+/* End Style Steps Section  */
+
+/* Start Style About Section */
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 400px;
+}
+
+.about-register {
+  background-color: var(--main-color);
+}
+
+.about-search {
+  background-color: var(--second-color);
+}
+
+.about-time {
+  background-color: var(--third-color);
+}
+
+.about-info img {
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.about-info h4 {
+  font-size: 17px;
+  color: var(--fifth-color);
+  padding-bottom: 15px;
+}
+
+.about-info a {
+  text-decoration: none;
+  background-color: var(--fifth-color);
+  padding: 10px;
+  color: var(--main-color);
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.about-info:nth-child(2) a {
+  color: gray;
+}
+
+/* Start Media For About Section */
+
+@media (min-width: 768px) {
+  .about-info {
+    padding: 0 45px;
+    flex-direction: row;
+    height: 300px;
+  }
+
+  .about-info p {
+    font-size: 16px;
+  }
+
+  .about-info a {
+    font-size: 14px;
+  }
+
+  .about-info h4 {
+    font-size: 19px;
+  }
+
+  .about-info img {
+    margin: 0;
+  }
+}
+
+/* End Style About Section */

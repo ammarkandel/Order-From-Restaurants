@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/search.css" >
+    <title>Search-For-Restaurants</title>
+</head>
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" height="25" width="30" alt="logo" >
+                <span>ORDERFROM</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-search"></i><span>RESTAURANTS</span></a></li>
+                <li><a href="#"><i class="fas fa-user"></i><span>ABOUT</span></a></li>
+                <li><a href="#"><i class="fas fa-rss"></i><span>BLOG</span></a></li>
+                <li><a href="#"><i class="fas fa-bars"></i><span>MORE...</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Search-header -->
+    <header class="search-header">
+        <h1>Filter by city, street and meal:</h1>
+        <form>
+            <fieldset>
+                <label>YOUR CITY :</label>
+                <input type="text" name="city" >
+            </fieldset>
+            <fieldset>
+                <label>YOUR STREET :</label>
+                <input type="text" name="street" >
+            </fieldset>
+            <fieldset>
+                <label>YOUR FAVORITE MEAL :</label>
+                <input type="text" name="meal" >
+            </fieldset>
+            <fieldset>
+                <label>HOW MANY MEALS?</label>
+                <input type="number" name="meal-numbers" >
+            </fieldset>
+            <fieldset>
+                <input type="submit" name="search" value="search" >
+                <button type="reset" name="reset">clear filter</button>
+            </fieldset>
+        </form>
+    </header>
+    <!-- End Search-header -->
+    <!-- Start Search-results -->
+    <section class="search-results">
+       <h2>Search Results Found 7 Restaurant(s).</h2>
+       <div class="results">
+          <div>
+            <article class="result-overlay">
+               <h3>Summer Moon</h3>
+               <h5>Grills,Oriental,Seafood</h5>
+               <a href="./details.html">details</a>
+            </article>
+          </div>
+          <div>
+            <article class="result-overlay">
+                <h3>Piero - Kafr Abdo</h3>
+                <h5>Grills,Oriental,Seafood</h5>
+                <a href="./details.html">details</a>
+             </article>
+          </div>
+          <div>
+            <article class="result-overlay">
+                <h3>Milano's Pizza</h3>
+                <h5>Grills,Oriental,Seafood,Pizza</h5>
+                <a href="./details.html">details</a>
+             </article>
+          </div>
+          <div>
+            <article class="result-overlay">
+                <h3>Jullanar's Secrets</h3>
+                <h5>Grills,Oriental,Seafood</h5>
+                <a href="./details.html">details</a>
+             </article>
+          </div>
+          <div>
+            <article class="result-overlay">
+                <h3>Butcher and kbda El Chef</h3>
+                <h5>Grills,Oriental,Seafood</h5>
+                <a href="./details.html">details</a>
+             </article>
+          </div>
+          <div>
+            <article class="result-overlay">
+                <h3>Africano</h3>
+                <h5>Grills,Oriental,Seafood</h5>
+                <a href="./details.html">details</a>
+             </article>
+          </div>
+          <div>
+            <article class="result-overlay">
+                <h3>Kozbara</h3>
+                <h5>Grills,Oriental,Seafood</h5>
+                <a href="./details.html">details</a>
+             </article>
+          </div>
+       </div>
+    </section>
+    <!-- End Search-results -->
+    <!-- Start Footer -->
+    <footer>
+      <div class="footer-contact">
+         <ul>
+             <li><a href="#">HOME</a></li>
+             <li><a href="#">SEARCH</a></li>
+             <li><a href="#">ABOUT US</a></li>
+             <li><a href="#">ADVERTISE</a></li>
+         </ul>
+         <div class="footer-logo">
+             <img src="../images/logo.png" height="40" width="40" alt="footer-logo" >
+         </div>
+         <ul>
+            <li><a href="#">FACEBOOK</a></li>
+            <li><a href="#">TWITTER</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">GOOGLE +</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+         <div class="footer-subscribe">
+            <h4>SUBSCRIBE</h4>
+            <fieldset>
+                <input type="email" id="footer-email" name="email" placeholder="you@example.com" >
+                <input type="submit" id="footer-submit" name="email-submit" >
+            </fieldset>
+         </div>
+         <div>
+            <h4>CONTACT</h4>
+            <p>Have a question or submission <a href="#">info@ORDERFROM.com</a></p>
+         </div>
+         <div>
+            <h4>ABOUT</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ad inventore doloribus mollitia, omnis quas dolorem distinctio tempora ipsam reiciendis.<a href="#"> Learn more...</a></p>
+         </div>
+      </div>
+      <div class="copy-right">
+          <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-wordpress"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+          <p>© 2020 ORDERFROM, Inc. All rights reserved, POWER BY LOVE AND AWESOMENESS.</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+</body>
+</html>

@@ -1,0 +1,64 @@
+.navbar {
+  height: 4rem;
+  background-color: var(--main-color);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.logo span {
+  font-size: 21px;
+  color: white;
+  margin-left: 5px;
+}
+
+.nav-links {
+  padding-top: 8px;
+}
+
+.nav-links li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.nav-links li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--fifth-color);
+  font-size: 14px;
+}
+
+.nav-links span {
+  display: none;
+}
+
+/* Start Media ( Tablet, Desktop) For Navbar */
+
+@media (min-width: 768px) {
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-links span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 15px;
+  }
+}
