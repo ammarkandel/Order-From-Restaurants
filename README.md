@@ -1,6 +1,6 @@
 # HTML-CSS3-Capstone-Project
 
-### This project built with pure HTML and CSS3. It was fully responsive for all devices. The idea is to order food from restaurants near the user. The project has three pages ( home page, search results page and details page ).
+### This project built with pure HTML and CSS3. It was fully responsive for all devices. The idea is to order food from restaurants near the user. The project has three pages ( home page, search results page and, details page ).
 
 ![screenshot](images/img.png)
 
