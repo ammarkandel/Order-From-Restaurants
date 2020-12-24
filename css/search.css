@@ -15,7 +15,7 @@
   justify-content: center;
 }
 
-.search-header h2 {
+.search-header h1 {
   text-align: center;
   font-size: 40px;
   color: var(--seventh-color);
