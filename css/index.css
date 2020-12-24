@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.main-header-overlay h3 {
+.main-header-overlay h1 {
   color: var(--fifth-color);
   margin-bottom: 5px;
   font-size: 19px;
@@ -127,7 +127,7 @@
     font-size: 16px;
   }
 
-  .main-header-overlay h3 {
+  .main-header-overlay h1 {
     font-size: 27px;
   }
 }
@@ -162,7 +162,7 @@
     font-size: 19px;
   }
 
-  .main-header-overlay h3 {
+  .main-header-overlay h1 {
     font-size: 45px;
   }
 }
@@ -176,7 +176,7 @@
   margin: 80px 0 30px 0;
 }
 
-.steps h4 {
+.steps h2 {
   text-align: center;
   margin-bottom: 50px;
   color: var(--main-color);
@@ -189,7 +189,7 @@
   align-items: center;
 }
 
-.steps-details div h5 {
+.steps-details div h3 {
   font-size: 18px;
   padding-top: 20px;
 }
@@ -211,7 +211,7 @@
 .steps-details {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: repeat(4, 250px);
+  grid-template-rows: repeat(4, 350px);
   row-gap: 40px;
 }
 
@@ -234,11 +234,12 @@
 /* Start Style About Section */
 
 .about-info {
-  height: 250px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 20px;
+  height: 400px;
 }
 
 .about-register {
@@ -282,6 +283,8 @@
 @media (min-width: 768px) {
   .about-info {
     padding: 0 45px;
+    flex-direction: row;
+    height: 300px;
   }
 
   .about-info p {

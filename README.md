@@ -1,6 +1,6 @@
 # HTML-CSS3-Capstone-Project
 
-### This project build with pure html and css3. The idea is about order food from restaurants near user. It is full responsive for all devices.
+### This project built with pure HTML and CSS3. It was fully responsive for all devices. The idea is to order food from restaurants near the user. The project has three pages ( home page, search page and details page ).
 
 ![screenshot](images/img.png)
 
@@ -9,6 +9,15 @@
 - Html
 - Css3
 - Fontawesome
+- Built with CSS responsive techniques as "Flex, Grid and, Media queries".
+
+## Usage
+
+1- Open your terminal.
+2- Paste "git clone https://github.com/ammarkandel/HTML-CSS-Capstone-Project.git" in the terminal.
+3- cd HTML-CSS-Capstone-Project
+4- Open index.html
+5- Congratulations, you are here now!
 
 ## Live Demo
 

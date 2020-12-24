@@ -116,10 +116,18 @@ main {
   margin-bottom: 20px;
 }
 
-#map {
-  background: url("../images/egypt-map.png") center no-repeat;
-  background-size: cover;
-  height: 500px;
+.map-directions .gmap_canvas {
+  overflow:hidden;
+  background:none !important;
+  width:100%;
+  height:400px;
+}
+
+.map-directions .mapouter {
+  position:relative;
+  text-align:right;
+  width:100%;
+  height:400px;
 }
 
 /* End Style Map-directions */
