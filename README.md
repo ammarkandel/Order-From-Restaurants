@@ -25,7 +25,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://ammarkandel.github.io/HTML-CSS-Capstone-Project/)
+[Live Demo Link](https://ammarkandel.github.io/Order-From-Restaurants/)
 
 👤 **Ammar El refay Kandel**
 
