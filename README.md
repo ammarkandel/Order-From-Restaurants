@@ -25,7 +25,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://ammarkandel.github.io/Order-From-Restaurants/)
+[Live Demo Link](https://order-from-restaurants.vercel.app)
 
 👤 **Ammar El refay Kandel**
 
