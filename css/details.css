@@ -7,8 +7,6 @@ main {
   margin: 80px 50px 20px 50px;
 }
 
-/* Start Style Details-section */
-
 .details-section {
   box-shadow: 3px 3px 8px 8px rgba(136, 136, 136, 0.4);
   padding: 20px;
@@ -135,5 +133,3 @@ main {
   margin: 0;
   border: 0;
 }
-
-/* End Style Map-directions */
